@@ -10,7 +10,7 @@ router.get("/", function(req, res){
 router.get("/burgers", function (req, res) {
     burger.all(function(data){
         var burger_data = { burgers: data};
-        res.render("index", burger_data);
+        res.render("./../views/index", burger_data);
 
     })
   })
